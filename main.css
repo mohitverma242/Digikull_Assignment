@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255,107,107);
+}
+.checkbtn{
+    font-size: 30px;
+    user-select: none;
+    font-weight: bold;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:60px;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-items a{
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: black;
+}
+
+.main{
+    height: 100vh;
+}
+.image1{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+.loreum{
+    width: 50%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    padding: 5rem;
+    font-family:"Lucida Console", "Courier New", monospace;
+    background-image: linear-gradient(to right,rgb(239, 239, 177),rgb(218, 195, 195) );
+}
+.loreum p{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: none;
+}
+.loreum h1{
+    padding: 0.5rem;
+    margin: 2rem 0;
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 6px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.burger{
+    width: 50%;
+    height:500px;
+    float: right;
+    overflow: hidden;
+}
+
+.burgerimage{
+   width: 100%;
+   height: 500px;
+}
+.burgerimage img{
+    width:100% ;
+    height: 500px;
+}
+.btn{
+    margin: 4rem 0.1rem ;
+    font-size: 1.1rem;
+    text-align:left;
+}
+.btn button{
+    width: 200px;
+    height: 35px;
+    background-color:rgb(225, 107, 107);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image_Container{
+    margin-top:460px;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(221, 221, 130),rgb(247, 175, 247));
+  
+    
+}
+.image_Group{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+  padding: 5px;
+  float: left;
+  gap: 20px;
+}
+.street1 img{
+    width: 200px;
+    height: 200px;
+}
+.street1{
+    transition: all 1.1s;
+}
+.street2{
+    transition: all 1.1s;
+}
+.street3{
+    transition: all 1.1s;
+}
+.street2 img{
+    width:200px;
+    height:200px;
+}
+.street3 img{
+    width: 200px;
+    height: 410px;
+}
+.street1:hover{
+  transform: scale(1.1);
+}
+.street2:hover{
+    transform: scale(1.1);
+  }
+  .street3:hover{
+    transform: scale(1.1);
+  }
+  
+.street{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.write{
+    padding-left: 20px;
+    padding-top: 10px;
+    gap: 30px;
+    width: 30%;
+    margin: 10px;
+    float: right;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255, 100, 131);
+}
+.write span{
+    width: 100px;
+    border: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.write p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+span img{
+    width: 20px;
+    height: 20px;
+}
+.write h1{
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-spacing: 20px;
+    letter-spacing: 3px;
+}
+.emp{
+    width: 100%;
+    height: 2px;
+    margin-top:50px;
+   background-color: rgb(213, 205, 205);
+}
+@media screen and (max-width:576px){
+    .image1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    .image_Container{
+        padding: 10px;
+        width: fit-content;
+    }
+    .street1 img{
+        width: 150px;
+        height: 150px;
+    }
+    .street2 img{
+        width: 150px;
+        height: 150px;
+    }
+    .street3 img{
+        width: 150px;
+        height: 310px;
+    }
+    .loreum{
+        width: 100%;
+        height:50%;
+        float: none;
+        text-align: center;
+    }
+    .loreum h1{
+        padding: 0;
+        margin: 0.2rem;
+    }
+    .burger{
+        width: 100%;
+        float: none;
+    }
+    .btn{
+        margin:2rem 0rem;
+    }
+    .write{
+        width: fit-content;
+        margin: auto 50%;
+        font-size: 2.2rem;
+        gap: 10px;
+        word-spacing: 10px;
+        letter-spacing: 3px;
+    }
+  .image_Group{
+    width: fit-content;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width:910px){
+   .nav-items{
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    top:80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+   }
+   #check:checked ~ .nav-items{
+    display:block;
+   }
+   .nav-items a{
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .checkbtn{
+    margin-left: 80%;
+   }
+   .image_Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+   }
+    .image1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        height: fit-content;
+    }
+    .loreum{
+        width: 100%;
+        float: none;
+        gap: 30px;
+        display: flex;
+        flex-direction:column;
+    }
+    .burger{
+        width: 100%;
+        float: none;
+    }
+    .write{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:1096px){
+   nav{
+      width: 100%;
+   }
+   .emp{
+    margin-top: 0;
+   }
+   .nav-items{
+    gap:20px;
+   }
+    .image1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    .image_Container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10px;
+       }
+    .loreum{
+        width: 100%;
+        height: fit-content;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .loreum h1{
+        padding: 0;
+        margin: 0.2rem;
+       font-weight: 600;
+       font-size: 2rem;
+       letter-spacing: 3px;
+    }
+    .burger{
+        width: 100%;
+        float: none;
+    }
+    .btn{
+     border: 1px solid black;
+    }    
+    .write{
+        height: fit-content;
+        gap: 20px;
+    }
+  
+}
